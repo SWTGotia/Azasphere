@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Tools Hub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0e0e0e;
+      color: #fff;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background: #000;
+      border-bottom: 1px solid #333;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .card {
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      border-color: #fff;
+      background-color: #222;
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .card button {
+      background: none;
+      border: 1px solid white;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .card button:hover {
+      background-color: white;
+      color: black;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #333;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>AI Tools Hub</h1>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>ChatGPT</h2>
+      <button onclick="openTool('https://chat.openai.com')">Open</button>
+    </div>
+    <div class="card">
+      <h2>Grammarly</h2>
+      <button onclick="openTool('https://www.grammarly.com')">Open</button>
+    </div>
+    <div class="card">
+      <h2>Quillbot</h2>
+      <button onclick="openTool('https://quillbot.com')">Open</button>
+    </div>
+    <div class="card">
+      <h2>Jasper AI</h2>
+      <button onclick="openTool('https://www.jasper.ai')">Open</button>
+    </div>
+    <div class="card">
+      <h2>Canva AI</h2>
+      <button onclick="openTool('https://www.canva.com')">Open</button>
+    </div>
+    <div class="card">
+      <h2>Copy.ai</h2>
+      <button onclick="openTool('https://www.copy.ai')">Open</button>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 AI Tools Hub. All rights reserved.
+  </footer>
+
+  <script>
+    function openTool(url) {
+      window.open(url, '_blank');
+    }
+  </script>
+
+</body>
+</html>
